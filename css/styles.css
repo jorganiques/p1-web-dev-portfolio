@@ -1,1 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right li {
+    margin: 0 15px;
+}
+
+.nav-right li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-right li a:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Home section */
+.hero {
+    display: flex;
+    height: 75vh;
+    color: white;
+}
+
+.split {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left {
+    background: white;
+    color: black;
+}
+
+.right {
+    background: black;
+    color: white;
+}
+
+/* About section */
+.about-content {
+    text-align: left;
+}
+
+.profile-pic {
+    width: 75px;
+}
+
+/* Skills section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill {
+    text-align: center;
+    flex: 1 1 150px;
+    font-size: 10px;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact {
+    text-align: left;
+}
+
+/* Projects section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
